@@ -21,7 +21,7 @@ app.use(routers)
 
 
 
-    /* ----------- app.listen : pone en marcha el listen del servidor ------------------ */
+    /* ----------- sever------------------ */
     
     const PORT = process.env.PORT || 8080
     const server = app.listen(PORT, () => {
