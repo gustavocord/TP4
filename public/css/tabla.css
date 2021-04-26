@@ -1,0 +1,16 @@
+/* lista de PRODUCTOS*/
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #25acb6;
+  }
+  
+  td, th {
+    border: 5px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/tabla.css">
+    {{>head}}
+</head>
+<body>
+{{>navigation}}
+<div class="container mt-3">
+    <div class="jumbotron">
+        <h1 style="color:red;">Formulario de notificacion de mail</h1>
+        <br>
+
+        <form action="/set-correo" method="post">
+            
+            <div class="form-group">
+                <label for="email"><b>Ingrese su mail</b></label>
+                <input id="email" class="form-control" type="email" name="email">
+            </div>
+            
+            <button class="btn btn-success mt-3 mb-5">Guardar Email</button>
+        </form>
+    </div>
+</div>
+
+
+  {{> footer}} 
+ </body>
+</html>
+
+</html>

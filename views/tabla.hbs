@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="./css/tabla.css">
+    {{>head}}
+</head>
+<body>
+{{>navigation}}
+
+<h2 style="color: #F2F2F2;;">Productos</h2>
+{{#if productos.length}}
+    
+       
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Descripcion</th>
+      <th scope="col">Imagen</th>
+      {{#each productos}}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td >{{nombre}}</td>
+      <td>{{precio}}</td>
+      <td>{{descripcion}}</td>
+      <td><img src="{{url}}" alt="escriba" style = "width: 10%"; "heigth: 10%";></td>
+    </tr>
+  </tbody>
+            {{/each}}
+        </table>
+{{else}}
+    <h3 class="alert alert-danger">no hay  productos para listar</h1>
+{{/if}}
+ 
+  {{> footer}} 
+ </body>
+</html>
+
+
+</html>
+
+
